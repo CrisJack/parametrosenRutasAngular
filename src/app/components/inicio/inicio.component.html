@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">   
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Más Información</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let usu of usuarios">
+                  <tr>
+                    <th scope="row">{{usu.id}}</th>
+                    <td>{{usu.nombre}}</td>
+                    <td>{{usu.apellido}}</td>
+                    <td>{{usu.correo}}</td>
+                    <td><button (click)="verDetalle(usu.id)" type="button" class="btn btn-primary">Ver Detalle</button></td>
+                  </tr>                  
+                </tbody>
+              </table>                            
+        </div>
+    </div>
+</div>

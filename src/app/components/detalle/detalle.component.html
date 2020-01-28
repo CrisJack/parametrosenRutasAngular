@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="{{detalle.img}}" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title"><b>{{detalle.nombre}}</b></h5>
+                  <p class="card-text">{{detalle.bio}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Apellido:</b>  {{detalle.apellido}}</li>
+                  <li class="list-group-item"><b>Correo:</b>  {{detalle.correo}}</li>
+                  <li class="list-group-item"><b>Bio:</b>  {{detalle.bio}}</li>
+                </ul>
+                <div class="card-body">
+                    <button type="button" class="btn btn-outline-danger bg-danger text-white btn-block" [routerLink]="['/']">Regresar Atras</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
